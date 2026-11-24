@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Product Explorer</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <h1>FABRILIFE</h1>
+    <p>Search products, filter by category, and save favourites</p>
+  </header>
+
+  <section class="controls">
+    <input
+      type="text"
+      id="searchInput"
+      placeholder="Search products by title..."
+    />
+
+    <select id="categoryFilter">
+      <option value="all">All Categories</option>
+    </select>
+
+    <select id="sortFilter">
+      <option value="default">Sort: Default</option>
+      <option value="low">Price: Low to High</option>
+      <option value="high">Price: High to Low</option>
+    </select>
+
+    <button id="clearSavedBtn">Clear Saved Products</button>
+  </section>
+
+  <p id="status" class="status">Loading products...</p>
+
+  <section id="productsContainer" class="products"></section>
+
+  <section class="saved-section">
+    <h2>Saved Products</h2>
+    <p>Your saved products remain after refreshing the page.</p>
+    <ul id="savedList" class="saved-list"></ul>
+  </section>
+
+  <script src="script.js"></script>
+</body>
+</html>
